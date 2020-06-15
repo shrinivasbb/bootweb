@@ -1,0 +1,171 @@
+:root{
+    --main-txt-align:center!important;
+    --main-width:100%;
+    --main-fnt-big-size: 2rem ;
+    --main-fnt-small-size:1rem;
+    --main-bg-color:rgb(88, 61, 10);
+    --main-color:black;
+    --main-pad: 15px;
+    --main-margin:15px;
+    --main-padding-botton:30%;
+    --main-font: 'Montserrat', sans-serif;
+    --sec-font: 'Ubuntu', sans-serif;
+    --brand-font: 'Sacramento', sans-serif;
+    --center-any-element: 0 auto 0 auto;
+    --font-bold: bold;
+}
+
+body{
+    -webkit-animation: random 10s infinite;
+     animation: random 30s infinite;
+}
+
+@keyframes  random {
+    75% { --main-bg-color: rgb(46, 87, 59); --main-color:black} 
+    30% {  --main-bg-color: rgb(209, 209, 57); --main-color:black} 
+    45% {  --main-bg-color: rgb(55, 100, 197); --main-color:black} 
+    60% {  --main-bg-color: rgb(190, 77, 77); --main-color:black}
+    75% {  --main-bg-color: rgb(201, 67, 190); --main-color:black}  
+    75% {  --main-bg-color: rgb(10, 10, 10); --main-color:white }  
+}
+
+.nav-item:hover{
+    border-bottom: thin groove var(--main-color);
+}
+
+
+
+.navbar-brand{
+    color: var(--main-color);
+    font-family: var(--brand-font);
+    font-weight: var(--font-bold);
+}
+
+body{
+    background-color: var(--main-bg-color);
+    font-family:var(--main-font);
+}
+
+div.divstyle{
+    font-family: var(--sec-font);
+    background-color: var(--main-bg-color);
+    color: var(--main-color);
+    width: var(--main-width);
+    text-align: var(--main-txt-align);
+    padding-bottom: 1rem;
+}
+
+.navbar{
+    margin-bottom:8rem;
+}
+
+#innerdiv{
+    width:50%;
+    margin: var(--center-any-element);
+    background-color: var(--main-bg-color);
+}
+
+h1{
+    font-family:var(--main-font);
+    padding: 2rem 0 2rem 0;
+    text-align: var(--main-txt-align);
+}
+
+img.details{
+    height: 150;
+    width: 150;
+    border-radius: 100%;
+    border: thick;
+}
+
+img.ceo{
+    float: left;
+    margin: 0 2rem 6rem 0;
+}
+
+img.cto{
+    float: right;
+    margin: 0 0 6rem 0;
+}
+
+span.ceo{
+    display: block;
+    margin: 2rem 0 7rem 4rem;
+    width:90%;
+    text-align: left;
+    border-top: groove;
+    border-bottom: groove;
+}
+
+.ceo:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.cto:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+#details{
+    width:50%;
+    margin: var(--center-any-element);
+    text-align: left;
+}
+
+#services{
+    background-color: var(--main-bg-color);
+    width:auto;
+    height: auto;
+    margin: var(--center-any-element);
+    padding: 0 0 5px 0;
+    text-align: Center;
+} 
+
+span.cto{
+    display: block;
+    margin: 8rem 0 5rem 0.2rem;
+    width:90%;
+    text-align: left;
+    border-top: groove;
+    border-bottom: groove;
+}
+
+.icon{
+    float: left;
+    padding: 0 auto;
+    margin: 0 5px;
+}
+
+#services p{
+   width: 450px;
+   margin: auto;
+   text-align: left;
+}
+
+form{
+    background-color: #c5c5c53d;
+    color: var(--main-bg-color);
+    font-size: medium;
+    font-weight: var(--font-bold);
+    padding:20px 20px 20px 20px;
+}
+
+#footer{
+    background-color: var(--main-bg-color);
+    text-align: var(--main-txt-align);
+    margin: var(--center-any-element);
+    font-weight: bolder;
+    color:var(--main-color);
+    padding: 10px;
+}
+
+
+@media (max-width:500px){
+
+    span.ceo, span.cto{
+        font-size: smaller;
+    }
+
+}
